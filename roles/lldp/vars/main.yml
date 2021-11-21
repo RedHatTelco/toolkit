@@ -1,0 +1,11 @@
+platform_lldp_command:
+  ios: show version | i uptime
+  eos: show version | i Uptime
+  nxos: show version | grep uptime
+  vyos: uptime
+  junos: show lldp
+
+platform_lldp_cofig:
+  ios:
+  junos:
+    enabled: yes
