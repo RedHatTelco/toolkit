@@ -1,6 +1,4 @@
 ---
 - name: configure lldp on juniper device
-  vars:
-    ansible_connection: network_cli
   junipernetworks.junos.junos_lldp_global:
     config: "{{ platform_lldp_cofig[ansible_network_os] }}"
