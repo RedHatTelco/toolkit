@@ -3,7 +3,7 @@ platform_lldp_command:
   eos: show version | i Uptime
   nxos: show version | grep uptime
   vyos: uptime
-  junos: show protocols lldp
+  junos: show lldp detail
 
 platform_lldp_cofig:
   ios:
